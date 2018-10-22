@@ -1,0 +1,114 @@
+body{
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.header{
+    width: 100%;
+    height: auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    background-color: dimgrey;
+    color: white;
+    font-size: 24px;
+
+}
+
+.header ul li{
+   list-style: none;
+   padding: 0px;
+}
+
+.header ul{
+    list-style: none;
+    padding: 0px;
+}
+
+.menu{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    width:100%;
+    height: auto;
+    background-color: dimgrey;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+
+
+
+.button{
+    display: flex;
+    width: 33.33333%;
+    height: auto;
+    margin: 10px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+.menu .button a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu .button a:visited{
+    text-decoration: none;
+}
+
+.button:hover{
+    color: whitesmoke;
+}
+
+#dropdown{
+    position: relative;
+    display: inline-block;
+
+}
+
+.dropdown_content{
+    display: none;
+    position: absolute;
+    background-color: dimgrey;
+    width: 100%;
+    z-index: 1;
+    padding: 10px;
+}
+
+.dropdown_content a{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+#dropdown:hover .dropdown_content {
+    display: block;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0px;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    background-color: dimgrey;
+    color: white;
+    font-size: 14px;
+}
+
