@@ -1,18 +1,56 @@
 body{
+    font-family: 'Source Sans Pro', sans-serif;
     margin: 0px;
     box-sizing: border-box;
+    overflow-x: hidden;
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+}
+
+form{
+    width: 100%;
+    margin: 0px;
+}
+
+
+h1{
+    font-size: 38;
+    width: 100%;
+    text-align: left;
+}
+
+h4{
+    width: 100%;
+    text-align: left;
+}
+
+p{
+    font-size: 1.2em;
+    width: 100%;
+    text-align: left;
+}
+
+img {
+    width: auto;
+    height: 500px;
 }
 
 .header{
     width: 100%;
-    height: auto;
+    height: 80px;
     display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
     text-align: center;
-    justify-content: center;
+    justify-content: left;
     align-content: center;
-    background-color: dimgrey;
+    padding-left: 20px;
+    padding-right: 20px;
     color: white;
     font-size: 24px;
+    float: left;
 
 }
 
@@ -26,16 +64,30 @@ body{
     padding: 0px;
 }
 
+.logo{
+    float: left;
+    display: flex;
+    width: 150px;
+    height: auto;
+}
+
+.logo img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
 .menu{
+    float: right;
+    right: 0px;
     display: flex;
     flex-flow: row;
     flex-wrap: nowrap;
     width:100%;
-    height: auto;
-    background-color: dimgrey;
-    text-align: center;
+    height: 100%;
     justify-content: center;
     align-content: center;
+    align-items: center;
 }
 
 
@@ -44,18 +96,22 @@ body{
     display: flex;
     width: 33.33333%;
     height: auto;
-    margin: 10px;
     text-align: center;
     justify-content: center;
     align-content: center;
-    font-size: 24px;
-    color: white;
+    font-size: 18px;
+    color: gray;
     cursor: pointer;
 }
 
+.menu .button a:hover{
+    color: #333333;
+}
+
 .menu .button a{
+    text-align: right;
     text-decoration: none;
-    color: white;
+    color: gray;
 }
 
 .menu .button a:visited{
@@ -63,7 +119,7 @@ body{
 }
 
 .button:hover{
-    color: whitesmoke;
+    color: #333333;
 }
 
 #dropdown{
@@ -72,20 +128,25 @@ body{
 
 }
 
+
+
 .dropdown_content{
     display: none;
     position: absolute;
-    background-color: dimgrey;
+    background-color: white;
     width: 100%;
     z-index: 1;
     padding: 10px;
+    justify-content: center;
+    align-content: center;
+    text-decoration: none;
 }
 
 .dropdown_content a{
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
-    text-align: center;
+    text-align: right;
     justify-content: center;
     align-content: center;
     text-decoration: none;
@@ -95,10 +156,11 @@ body{
 
 #dropdown:hover .dropdown_content {
     display: block;
+
 }
 
 .footer{
-    position: absolute;
+    position: relative;
     bottom: 0px;
     padding: 20px;
     width: 100%;
@@ -107,8 +169,127 @@ body{
     text-align: center;
     justify-content: center;
     align-content: center;
-    background-color: dimgrey;
+    background-color: royalblue;
     color: white;
     font-size: 14px;
+}
+
+#hero{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.text {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    width: 60%;
+    height: auto;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.text h4{
+    text-align: left;
+}
+
+.featured{
+    position: relative;
+    width: 100%;
+}
+
+
+
+.featured h1{
+    position: absolute;
+    font-size: 24px;
+    top: -10px;
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+
+}
+
+#center{
+    text-align: center;
+}
+
+.articles_box{
+    width: 80%;
+    margin: 20px;
+    height: auto;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.each_article{
+    margin: 20px;
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    width: 30%;
+    height: auto;
+    width-max:400px;
+    background-color: aliceblue;
+    border-radius: 0px 0px 10px 10px;
+    transition: 0.5s;
+}
+
+.each_article:hover{
+    transform: scale(1.2);
+}
+
+.each_article img{
+    width:100%;
+    border-radius: 10px 10px 0px 0px;
+    height: auto;
+    object-fit: contain;
+}
+
+.each_title{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.form{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: 20px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+
+}
+
+.form table{
+    width: 80%;
+
+}
+
+#message{
+    width: 600px;
+    height: 200px;
+}
+
+#submit{
+    width: 60px;
+    height: 40px;
+    background-color: royalblue;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bolder;
 }
 

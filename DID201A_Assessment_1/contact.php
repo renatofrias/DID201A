@@ -5,7 +5,10 @@
 
 <html>
 
-<form action="contact_submit.php" method="get">
+<h1 id="center">Get in touch!</h1>
+<p id="center">Please fill the details bellow and I will get back to you as soon as possible.</p>
+
+<form action="contact_submit.php" method="post">
     <div class="form">
         <table align="center">
             <tr>
@@ -19,12 +22,12 @@
 
             <tr>
                 <td>Mobile:</td>
-                <td><input type="text" name="name" size="50" length="auto"></td>
+                <td><input type="text" name="phone" size="50" length="auto"></td>
             </tr>
 
             <tr>
                 <td>Message:</td>
-                <td><input type="text" name="name" size="400" width="600px" height="400px"></td>
+                <td><input id="message" name="message" type="text" ></td>
             </tr>
 
 
@@ -33,7 +36,7 @@
 
 
             <tr>
-                <td><input type="submit" name="submit" value="submit"></td>
+                <td><input id="submit" type="submit" name="submit" value="submit"></td>
             </tr>
         </table>
     </div>
